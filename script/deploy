@@ -1,0 +1,8 @@
+#!/bin/sh
+ssh ubuntu@94.130.179.60 <<EOF
+ cd ~temp/node-app
+ git pull
+ npm install — production
+ pm2 restart all
+ exit
+EOF
